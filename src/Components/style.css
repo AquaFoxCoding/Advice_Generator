@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 30rem;
+  width: 30rem;
+}
+
+.content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: var(--Neon-Green);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--Light-Cyan);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  margin-bottom: 1rem;
+  width: 25rem;
+}
+
+.divider-desktop {
+  display: none;
+}
+
+.shuffle-btn {
+  background-color: var(--Neon-Green);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 500rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.shuffle-btn img {
+  width: 2.5rem;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shuffle-btn:hover {
+  box-shadow: 1px 1px 15px hsl(150, 75%, 78%, 0.75);
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 50rem;
+    width: 60rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  p {
+    font-size: 2.8rem;
+    margin: 4rem 4rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .divider-desktop {
+    display: flex;
+  }
+
+  .shuffle-btn {
+    width: 11rem;
+    height: 11rem;
+    bottom: -5rem;
+  }
+
+  .shuffle-btn img {
+    width: 4.5rem;
+    bottom: 3rem;
+  }
+}
