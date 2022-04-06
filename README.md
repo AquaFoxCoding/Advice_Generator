@@ -5,8 +5,6 @@ This app pull data from the Advice Slip API (https://api.adviceslip.com/) and us
 
 Framework - React 
 
-Languages - HTML,CSS,Javascript
-
 ### Live Examples of this App
 
 
