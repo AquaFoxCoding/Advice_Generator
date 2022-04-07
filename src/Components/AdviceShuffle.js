@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./style.css";
 import adviceSlip from "./api/adviceSlip";
-import { render } from "@testing-library/react";
 
 class AdviceShuffle extends React.Component {
   state = { content: "...loading", adviceNum: "" };
