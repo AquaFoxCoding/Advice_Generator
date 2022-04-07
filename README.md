@@ -1,4 +1,5 @@
 # Advice Generator
+This is a part of the Frontend Mentor challenge to make an advice generator that looks as close to the design as possible.
 This app pull data from the Advice Slip API (https://api.adviceslip.com/) and uses it to generate random advice when clicking the shuffle button.
 
 ## Built With
